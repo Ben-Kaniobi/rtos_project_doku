@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titel:   Beispiele
+% Autor:   Simon grossenbacher
+% Datum:   22.09.2013
+% Version: 1.0.1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%:::Change-Log:::
+% Versionierung erfolgt auf folgende Gegebenheiten: -1. Release Versionen
+%                                                   -2. Neue Kapitel
+%                                                   -3. Fehlerkorrekturen
+%
+% 1.0.0       Erstellung der Datei
+% 1.0.1       Bilder im Abschnitt "Verlinkungen" hinzugefügt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\chapter{Beispiele}\label{ch:beispiele}
+    Das ist ein Beispiel-Kapitel.
+    %
+    %
+    %Ueberschrift 1
+    \section{Überschrift 1}\label{s:uebschrift_1}
+        Das ist eine grosse Überschrift!\par
+        Nächster Absatz.
+        %
+        %Ueberschrift 2
+        \subsection{Überschrift 2}\label{ss:ueberschrift_2}
+            Dies ist eine kleinere Überschrift!
+            %
+            \subsubsection{Überschrift 3}\label{sss:uberschrift_3}
+                Noch eine kleinere Überschrift!
+    %
+    %
+    %Aufzählungen
+    \section{Aufzählungen}\label{s:aufzaehlungen}
+        Es gibt mehrere Möglichkeiten:
+        \begin{itemize}
+            \item Hallo
+            \item Tschüss
+        \end{itemize}
+        \begin{enumerate}
+            \item Eis
+            \item Zwöi
+        \end{enumerate}
+        \begin{description}
+            \item[Ich] Du Ich Du 
+            \item[Er] Sie Er Sie
+        \end{description}
+    %
+    %
+    %Formeln
+    \section{Formeln}\label{s:formeln}
+        Hier bietet sich die Funktion \texttt{formula} an.
+        \formula{
+            U=R\cdot I
+        }{
+            $U$ & Spannung in Volt\\
+            $R$ & Widerstand\\
+            $I$ & Strom}[eq:uri]
+        Es können auch mehrere Formeln zusammengefasst werden (man beachte das \textbf{\&} für die Ausrichtung)!
+        \formula{
+            U&=R\cdot I\\
+            R&= \frac{U}{I}
+        }{
+            $U$ & Spannung in Volt\\
+            $R$ & Widerstand\\
+            $I$ & Strom}[eq:uri2]
+    %        
+    %
+    %Bilder
+    \section{Bilder}\label{s:bilder}
+        Bilder können mit der Funktion \texttt{image} ein gefügt werden.
+        \image{content/image/bfh_logo}{scale=1}[Unterschrift für unter dem Bild \cite{pic:bfh}][Bildbeschreibung für im Abbildungsverzeichnis][img:bfh]
+    %
+    %
+    %Tabellen
+    \section{Tabellen}\label{s:tabellen}
+        Tabellen in \LaTeX sind ziemlich umständlich. Daher empfiehlt sich ein entsprechendes Plugin in der Office-Umgebung, die ein \LaTeX -Export ermöglichen. 
+        \begin{table}[htbp]
+             \centering
+             \begin{tabular}{|l|l|l|} 
+                 \hline
+                 \rowcolor{bfhblue}
+                 \textcolor{white}{Spalte 1} & \textcolor{white}{Spalte 2} & \textcolor{white}{Spalte 3}\\
+                 \hline
+                 Ich & bin & da \\
+                 \hline
+                 \multicolumn{2}{|l|}{Zwei Spalten vereinen} & Das geht!\\
+                 \hline
+             \end{tabular}
+             \caption{Messmittelliste der Messung Messleitung}
+             \label{tab:tabelle}  
+        \end{table}
+        \begin{itemize}
+            \item Falls Bilder in Tabellen nötig sein sollten, Befehl \texttt{imagetotab} verwenden      
+            \item Tabellen über mehrere Seiten sind mit der \texttt{longtable} möglich
+        \end{itemize}
+    %
+    %
+    %Code
+    \section{Code}\label{s:code}
+        \subsection{ANSI C}\label{ss:c}
+            \begin{lstlisting}[style=C,caption={Hallo Welt},label={list:hallowelt}]
+printf("Hallo Welt"); //Dummy Funktion
+            \end{lstlisting}  
+        %
+        % 
+        \subsection{MATLAB}\label{ss:matlab}
+            \begin{lstlisting}[style=Matlab,caption={Sinnlos},label={list:sinnlos}]
+close all
+clear all
+t = [0:1000];
+plot(t,t); %Dummy-Plot
+            \end{lstlisting}  
+    %
+    %
+    %Verlinkungen
+    \section{Verlinkungen}\label{s:verlinkungen}
+        \begin{description}
+            \item[Fussnoten] Fussnoten werden mit dem Kommando \texttt{footnote} erstellt\footnote{Ich bin eine normale Fussnote}
+            \item[Verweise] Es kann auf alle Labels verwiesen werden. Dazu dienen die Befehle \texttt{ref} und \texttt{pageref}: Das Kapitel \ref{s:verlinkungen} befindet sich auf Seite \pageref{s:verlinkungen}
+            \item[Quellen] Um auf Quellen zu verweisen, muss das Label bekannt sein (wird in der Datei \texttt{bibliography.bib} festgelegt). Anschliessend muss im \LaTeX~Editor \texttt{BibTex} ausgeführt werden. Daraufhin kann der Befehl \texttt{cite} eingesetzt werden \cite{lit:sus}. Evtl. muss das Dokument mehrmals compiliert werden. Für das bessere Verwalten der Quellen, kann bei Bedarf auch ein entsprechender Editor verwendet werden\footnote{z.B. JabRef \url{http://jabref.sourceforge.net/}}.
+            \image{content/image/bibtex}{scale=.5}[Literaturverzeichnis erstellen]
+            \image{content/image/bib}{scale=.5}[Ausschnitt aus der \texttt{bibliography.bib} Datei]
+            \item[Stichwortverzeichnis] Wörter für das Verzeichnis müssen mit \texttt{index} bekannt gemacht werden \index{Index}. Für die Zusammenstellung des Verzeichnisses muss im \LaTeX~Editor \texttt{MakeIndex} durchgeführt werden.
+            \image{content/image/index}{scale=.5}[Index erstellen]
+        \end{description}
+    %
+    %
+    %Diverses
+    \section{Diverses}\label{s:diverses}
+        %
+        %TODOs
+        \subsection{TODOs}\label{ss:todos}
+            Mit dem Befehl \texttt{todo} können noch unfertige Teile \todo{Noch nicht fertig} markiert werden.

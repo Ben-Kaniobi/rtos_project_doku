@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <type>com.umlet.element.custom.InitialState</type>
+    <coordinates>
+      <x>182</x>
+      <y>84</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>i</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>133</y>
+      <w>34</w>
+      <h>97</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;84;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>217</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Hand bereitmachen
+zum aufnehmen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>224</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>371</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>ECTS greifen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>322</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>434</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>483</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Semaphore "Band
+links frei" geben
+bg=orange
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>539</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Hand bereitmachen
+zum Ablegen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>490</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>546</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>644</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>693</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>ECTS ablegen
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>805</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Semaphore
+"Ablage frei" geben
+bg=light_gray
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>756</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>427</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Hand anheben
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>378</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>749</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Hand aus Ablage-
+bereich entfernen
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>700</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>84</x>
+      <y>161</y>
+      <w>118</w>
+      <h>713</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>105;21;21;21;21;700;105;700;105;672</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>77</x>
+      <y>56</y>
+      <w>196</w>
+      <h>833</h>
+    </coordinates>
+    <panel_attributes>topcenter:Handsteuerung links
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>343</x>
+      <y>217</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Hand bereitmachen
+zum aufnehmen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>224</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>343</x>
+      <y>371</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>ECTS greifen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>322</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>434</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>343</x>
+      <y>483</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Semaphore "Band
+rechts frei" geben
+bg=red
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>343</x>
+      <y>539</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Hand bereitmachen
+zum Ablegen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>490</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>546</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>644</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>343</x>
+      <y>693</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>ECTS ablegen
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>343</x>
+      <y>805</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Semaphore
+"Ablage frei" geben
+bg=light_gray
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>756</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>343</x>
+      <y>427</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Hand anheben
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>378</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>343</x>
+      <y>749</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Hand aus Ablage-
+bereich entfernen
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>700</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>294</x>
+      <y>161</y>
+      <w>118</w>
+      <h>713</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>105;21;21;21;21;700;105;700;105;672</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>287</x>
+      <y>56</y>
+      <w>196</w>
+      <h>833</h>
+    </coordinates>
+    <panel_attributes>topcenter:Handsteuerung rechts
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>518</x>
+      <y>357</y>
+      <w>140</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Hier werden Semaphoren
+aufgebraucht. Sie werden
+vom Förderbandtask erzeugt.
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>441</x>
+      <y>315</y>
+      <w>90</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>21;21;77;49</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>231</x>
+      <y>315</y>
+      <w>300</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>21;21;287;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>224</x>
+      <y>483</y>
+      <w>307</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>21;21;294;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>434</x>
+      <y>483</y>
+      <w>97</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>21;21;84;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>518</x>
+      <y>518</y>
+      <w>140</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Hier werden Semaphoren
+erzeugt. Sie werden vom
+Förderbandtask verbraucht.
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <group>
+    <element>
+      <type>com.umlet.element.custom.SendSignal</type>
+      <coordinates>
+        <x>126</x>
+        <y>273</y>
+        <w>126</w>
+        <h>28</h>
+      </coordinates>
+      <panel_attributes>Auf Semaphore "ECTS
+links rdy" warten
+bg=yellow</panel_attributes>
+      <additional_attributes/>
+    </element>
+    <element>
+      <type>com.umlet.element.custom.ReceiveSignal</type>
+      <coordinates>
+        <x>126</x>
+        <y>315</y>
+        <w>126</w>
+        <h>28</h>
+      </coordinates>
+      <panel_attributes>Semaphore "ECTS
+links rdy" erhalten
+bg=yellow</panel_attributes>
+      <additional_attributes/>
+    </element>
+  </group>
+  <group>
+    <element>
+      <type>com.umlet.element.custom.SendSignal</type>
+      <coordinates>
+        <x>336</x>
+        <y>273</y>
+        <w>126</w>
+        <h>28</h>
+      </coordinates>
+      <panel_attributes>Auf Semaphore "ECTS
+rechts rdy" warten
+bg=green</panel_attributes>
+      <additional_attributes/>
+    </element>
+    <element>
+      <type>com.umlet.element.custom.ReceiveSignal</type>
+      <coordinates>
+        <x>336</x>
+        <y>315</y>
+        <w>126</w>
+        <h>28</h>
+      </coordinates>
+      <panel_attributes>Semaphore "ECTS
+rechts rdy" erhalten
+bg=green</panel_attributes>
+      <additional_attributes/>
+    </element>
+  </group>
+  <group>
+    <element>
+      <type>com.umlet.element.custom.SendSignal</type>
+      <coordinates>
+        <x>126</x>
+        <y>595</y>
+        <w>126</w>
+        <h>28</h>
+      </coordinates>
+      <panel_attributes>Auf Semaphore
+"Ablage frei" warten
+bg=light_gray</panel_attributes>
+      <additional_attributes/>
+    </element>
+    <element>
+      <type>com.umlet.element.custom.ReceiveSignal</type>
+      <coordinates>
+        <x>126</x>
+        <y>637</y>
+        <w>126</w>
+        <h>28</h>
+      </coordinates>
+      <panel_attributes>Semaphore
+"Ablage frei" erhalten
+bg=light_gray</panel_attributes>
+      <additional_attributes/>
+    </element>
+  </group>
+  <group>
+    <element>
+      <type>com.umlet.element.custom.SendSignal</type>
+      <coordinates>
+        <x>336</x>
+        <y>595</y>
+        <w>126</w>
+        <h>28</h>
+      </coordinates>
+      <panel_attributes>Auf Semaphore
+"Ablage frei" warten
+bg=light_gray</panel_attributes>
+      <additional_attributes/>
+    </element>
+    <element>
+      <type>com.umlet.element.custom.ReceiveSignal</type>
+      <coordinates>
+        <x>336</x>
+        <y>637</y>
+        <w>126</w>
+        <h>28</h>
+      </coordinates>
+      <panel_attributes>Semaphore
+"Ablage frei" erhalten
+bg=light_gray</panel_attributes>
+      <additional_attributes/>
+    </element>
+  </group>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>133</x>
+      <y>126</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Semaphore "Band
+links frei" nehmen
+bg=orange
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>77</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.InitialState</type>
+    <coordinates>
+      <x>392</x>
+      <y>84</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>i</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>77</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>343</x>
+      <y>126</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Semaphore "Band
+rechts frei" nehmen
+bg=red
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>133</y>
+      <w>34</w>
+      <h>97</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;84;21;21</additional_attributes>
+  </element>
+</diagram>

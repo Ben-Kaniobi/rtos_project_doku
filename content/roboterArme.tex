@@ -1,0 +1,26 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titel:   Howto
+% Autor:   Simon Plattner
+% Datum:   24.04.2014
+% Version: 0.0.1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%:::Change-Log:::
+% Versionierung erfolgt auf folgende Gegebenheiten: -1. Release Versionen
+%                                                   -2. Neue Kapitel
+%                                                   -3. Fehlerkorrekturen
+%
+% 0.0.1       Erstellung der Datei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\chapter{Roboterarme}\label{ch:roboterarme}
+    Die Ansteuerung der Roboterarme erfolgt über einen eigenen Task. Pro Arm wird dazu ein entsprechender Task erzeugt. Das bietet den Vorteil, dass beide Arme weitestgehend unabhängig voneinander arbeiten können. Diese Flexibilität könnte sich als Vorteil herausstellen, falls das Projekt zu einem späteren Zeitpunkt erweitert werden würde.\par
+    %
+    Abbildung \ref{abb:robot_arm_left} zeigt den linken Roboterarm. Der rechte ist nahezu identisch. Die Arme unterscheiden sich in der Mechanik leicht voneinander. Dieser kleine Unterschied kann auf Fertigungstoleranzen zurückgeführt werden. Die einzige für das Projekt relevante Konsequenz ist, dass beide Arme nach dem gleichen Befehl leicht verschiedene Positionen anfahren.
+    %    
+    \image{appendix/StellarisRoboterModell}{page=11,trim=2cm 16.7cm 11cm 4.5cm,clip=true,width=0.5\textwidth}[Linker Roboterarm][abb:robot_arm_left]
+    %
+    
+    
+    
+    
+    \image{content/UML/activity_robot_arms}{width=1.0\textwidth}[Aktivitätsdiagramm \textit{Roboterarme}][abb:activity_robot_arms]
