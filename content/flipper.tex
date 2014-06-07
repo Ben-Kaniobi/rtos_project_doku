@@ -13,6 +13,22 @@
 % 0.0.0       Erstellung der Datei
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
 \chapter{Flipper}\label{ch:flipper}
+Am Ende des mittleren Förderbandes befindet sich eine Vorrichtung mit der die ECTS-Steine auf das linke oder rechte Förderband geschoben werden können.
 
+\image{appendix/StellarisRoboterModell}{page=10,trim=10.5cm 7.2cm 2.7cm 18.6cm,clip=true,width=0.5\textwidth}[Flipper und zugehörige Elektronik][abb:flipper]
 
-\image{appendix/StellarisRoboterModell}{page=10,trim=10.5cm 7.2cm 2.7cm 18.6cm,clip=true,width=0.5\textwidth}[Flipper][abb:flipper]
+%\begin{wrapfigure}{r}{0.5\textwidth}
+	%\vspace{-40pt}
+	%\begin{center}
+		%\includegraphics[scale=.3]{content/UML/activity_flipper}
+	%\end{center}
+	%\vspace{-30pt}
+	%\caption{Aktivitätsdiagramm des Flipper-Tasks}
+	%\label{abb:activity_flipper}
+	%\vspace{-20pt}
+%\end{wrapfigure}
+Auch für dieses System verwenden wir einen eigenen Task. Zusätzlich wird in diesem aber auch gleich das mittlere Förderband angesteuert. Das mittlere Förderband wird im Gegensatz zu den beiden anderen nicht immer wieder gestoppt und läuft also während der ganzen Programmlaufzeit ständig.
+
+In unserem Projekt haben wir dafür entschieden die ECTS immer abwechselnd auf das linke und das rechte Förderband zu schieben damit beide Seiten etwa gleich ausgelastet sind. Dementsprechend ist auch der Taskablauf relativ einfach.
+
+\image{content/UML/activity_flipper_rot}{scale=.5}[Aktivitätsdiagramm des Flipper-Tasks][abb:activity_flipper]
