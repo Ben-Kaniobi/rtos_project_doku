@@ -1,0 +1,22 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Titel:   Förderbänder
+% Autor:   kasen1
+% Datum:   2014-06-07
+% Version: 0.0.1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%:::Change-Log:::
+% Versionierung erfolgt auf folgende Gegebenheiten: -1. Release Versionen
+%                                                   -2. Neue Kapitel
+%                                                   -3. Fehlerkorrekturen
+%
+% 0.0.0       Erstellung der Datei
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\chapter{Förderbänder}\label{ch:foerderbaender}
+Das Model verfügt über drei Förderbänder, die jeweils über zwei Lichtschranken verfügen. In \autoref{abb:foerderband_links} ist das linke Förderband abgebildet. Das Förderband rechts ist gleich aufgebaut und einfach um \SI{180}{\degree} gedreht, dies gilt auch für die Anordnung der Lichtschranken. Lediglich der Motor und die Elektronik befinden sich aus praktischen Gründen auf der anderen Seite was aber die Ansteuerung nicht beeinflusst. Beim Förderband in der Mitte befinden sich die Lichtschranken nicht am Anfang sondern kurz vor dem Verteiler ("`Flipper"').
+
+\image{appendix/StellarisRoboterModell}{page=9,trim=2.2cm 19.4cm 10.7cm 6.2cm,clip=true,width=0.5\textwidth}[Förderband Links][abb:foerderband_links]
+
+Für die Ansteuerung des linken und rechten Förderbands wird je ein eigener Task verwendet, damit der parallele Ablauf einfach behandelt werden kann. Der Taskablauf ist jedoch bei beiden Tasks der selbe; dieser ist in \autoref{abb:activity_foerderband} ersichtlich. Das mittleren Förderbands wird im Flipper-Task angesteuert und ist somit in \autoref{ch:flipper} beschrieben.
+
+\image{content/UML/activity_conveyor}{scale=1}[Aktivitätsdiagramm der Förderband-Tasks][abb:activity_foerderband]
