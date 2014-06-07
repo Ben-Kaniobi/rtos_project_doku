@@ -13,5 +13,28 @@
 % 0.0.0       Erstellung der Datei
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
 \chapter{ECTS-Updater}\label{ch:ectsupdater}
+Damit der Zustand aller ECTS-Steine zu jeder Zeit abgefragt werden kann (\zB\ für die graphische Darstellung), wurde ein Task entworfen der diese Informationen regelmässig aktualisiert. Abgelegt sind diese Informationen jeweils in einer Struktur die folgende Daten enthält:
 
-\image{content/UML/xyz}{width=0.7\textwidth}[Übersicht über die Positionsdaten][abb:xyz]
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries id (uint8\_t):}]
+	\item[id (\textit{uint8\_t}):] Die ID des ECTS zur Identifikation
+	\item[x (\textit{uint16\_t}):] Die x-Position des ECTS, sie entspricht der zurückgelegten Distanz auf dem jeweiligen Förderband in Millimeter
+	\item[y (\textit{uint16\_t}):] Die y-Position des ECTS, sie entspricht der links-rechts-Verschiebung auf dem Fliessband (aufgeteilt in 8 "`Bahnen"')
+	\item[z (\textit{z\_pos}):] Das Teilsystem bei dem sich das ECTS befindet
+\end{description}
+
+\vspace{-12pt}
+\image{content/UML/xyz}{scale=.7, trim=0 1cm 0 0}[Übersicht über die Positionsdaten][abb:xyz]
+\vspace{-12pt}
+
+In \autoref{abb:ectsupdater} ist der Taskablauf ersichtlich. Die x- und y-Positionen aller ECTS-Strukturen werden mit Informationen von Lichtschranken aktualisiert. Zusätzlich wird die x-Position regelmässig mit einem von der Förderband-Geschwindigkeit abhängigen Wert inkrementiert. Beim Wechseln in ein anderes Teilsystem wird die x-Position wieder auf 0 gesetzt und die z-Position aktualisiert.
+
+\image{content/UML/activity_ects_updater}{scale=.5, trim=0 1cm 0 0}[Aktivitätsdiagramm des ECTS-Updater-Tasks][abb:ectsupdater]
+\vspace{-20pt}
+Zur Vereinfachung des Taskaufbaus und damit auch andere Tasks einfach die ECTS-Informationen aktualisieren können (beispielsweise beim Wechsel vom Förderband zum Roboterarm), wurden Hilfsfunktionen entwickelt. Diese werden nachfolgend kurz erklärt.
+
+\section{Funktion \texttt{CAN\_conveyor\_status\_handler}}\label{s:canconveyorstatushandler}
+Die Funktion \texttt{CAN\_conveyor\_status\_handler} wird aufgerufen, nachdem per CAN eine Antwort auf die Statusanfrage der Lichtschranken empfangen wurde. In ihr werden die Daten der Antwort verarbeitet und damit die ECTS-Strukturen aktualisiert.
+
+\section{Funktion \texttt{find\_ECTS}}\label{s:findects}
+Wenn eine ECTS-Struktur mit Informationen aus dem System aktualisiert werden soll muss vorerst die richtige ECTS-Struktur gefunden werden, denn die ECTS-Steine unterscheiden sich nur durch die Position. Für diese Aufgabe wurde die Funktion \texttt{find\_ECTS} implementiert. Als Eingangsparameter wird die z-Position angegeben in der Sich das ECTS-Befindet. Die Funktion liefert liefert dann einen Zeiger auf die gefundene ECTS-Struktur an dieser z-Position zurück. Wenn sich mehrere ECTS an dieser Stelle befinden (bei den Förderbändern), so wird ein Zeiger auf die ECTS-Struktur mit der grössten x-Position zurückgegeben.
+
