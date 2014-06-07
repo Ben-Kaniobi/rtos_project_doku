@@ -17,67 +17,73 @@
 %   Umlaute müssen separat behandelt werden!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%Sprach-Optionen
-\usepackage[ngerman]{babel} %neue deutsche Rechtschreibung
-\usepackage[T1]{fontenc}  %richtige Worttrennung
-%\usepackage[applemac]{inputenc}				% Mac - load extended character set (ISO 8859-1)
-\usepackage[latin1]{inputenc}  				% Unix/Linux - load extended character set (ISO 8859-1)
-%\usepackage[ansinew]{inputenc}  				% Windows - load extended character set (ISO 8859-1)
-%\usepackage[utf8]{inputenc}  					% UTF-8 encoding
+% Fix für KOMA-Script
+\usepackage{scrhack}
 
-%Zeilenabstand
+% Sprach-Optionen
+\usepackage[ngerman]{babel}         % Neue deutsche Rechtschreibung
+\usepackage[T1]{fontenc}            % Richtige Worttrennung
+%\usepackage[applemac]{inputenc}    % Mac - load extended character set (ISO 8859-1)
+%\usepackage[latin1]{inputenc}      % Unix/Linux - load extended character set (ISO 8859-1)
+\usepackage[ansinew]{inputenc}      % Windows - load extended character set (ISO 8859-1)
+%\usepackage[utf8]{inputenc}        % UTF-8 encoding
+
+% Zeilenabstand
 \usepackage{setspace}
 
-%Mehr Tabellenoptionen
+% Mehr Tabellenoptionen
 \usepackage{tabularx}
 \usepackage{longtable}
 
-%Besserer Flattersatz
+% Listen
+\usepackage{enumitem}
+
+% Besserer Flattersatz
 \usepackage{ragged2e}
 
-%Gleiten verhindern
+% Gleiten verhindern
 \usepackage{float}
 \usepackage{placeins}
 
 %Ueberschriften anpassen
 \usepackage{titlesec} 
 
-%Farben
+% Farben
 \usepackage{color}
 \usepackage{colortbl} %Für farbige Tabellen
 
-%PDF zu Dokument hinzufuegen
+% PDF zu Dokument hinzufuegen
 \usepackage[final]{pdfpages}
 
-%Grafiken verwalten
+% Grafiken verwalten
 \usepackage{graphicx}
 \usepackage[absolute]{textpos}
 
-%Zeichnen
+% Zeichnen
 %\usepackage{pst-pdf}
 %\usepackage{pst-all}
 
-%Listnings verwalten
+% Listnings verwalten
 \usepackage{listings}
 
-%Kopf- Fusszeile (Optionen müssen direkt übergeben werden)
-\usepackage[automark, %Automatisches aktualisieren der Chapter-Titel
-%            headsepline,  %Linie Kopfzeile
-%            footsepline,  %Linie fusszeilezeile
-%            markuppercase,
-            plainfootsepline  %Plain-Style auch mit Linie versehen
-            ]{scrpage2}
+% Kopf- Fusszeile (Optionen müssen direkt übergeben werden)
+\usepackage[automark,           % Automatisches aktualisieren der Chapter-Titel
+%			headsepline,        % Linie Kopfzeile
+%			footsepline,        %Linie fusszeilezeile
+%			markuppercase,
+			plainfootsepline    % Plain-Style auch mit Linie versehen
+			]{scrpage2}
 
-%Flexible Argumente bei Funktionen
+% Flexible Argumente bei Funktionen
 \usepackage{xargs}
 
-%erweiterte Steuerfunktionen
+% Erweiterte Steuerfunktionen
 \usepackage{ifthen}
 
-%Index für Stichwortverzeichnis
+% Index für Stichwortverzeichnis
 \usepackage{makeidx}
 
-%Index für Literaturverzeichnis
+% Index für Literaturverzeichnis
 \usepackage[babel,german=quotes]{csquotes}
 %\usepackage[backend=biber,style=numeric,defernumbers=true,sorting=nyt]{biblatex}
 \usepackage[backend=bibtex,defernumbers=true]{biblatex}
@@ -85,27 +91,34 @@
 \defbibheading{lit}{\section{Literatur}}
 \defbibheading{pic}{\section{Abbildungen}}
 
-%Zusaetzliche Symbole direkt im Text
+% Zusaetzliche Symbole direkt im Text
 \usepackage{textcomp}
 \usepackage{amssymb}
 
-%Einheit kontrolliert eingeben
+% Einheit kontrolliert eingeben
+% units -> Schöne Darstellung:
+% Z.B. \unitfrac[1.2]{m}{s} ergibt 1.2m/s (wobei m/s wie ein Zeichen)
+% siunitx -> SI-Einheiten:
+% Z.B. \SI{1.2}{\meter\per\second} ergibt 1,2 ms-1
+% (wobei -1 hochgestellt, Lücke vor Einheit halb so gross und Komma automatisch)
 \usepackage{units}
+\usepackage{siunitx}
+\sisetup{locale=DE}
 
-%dynamische Datumsausgabe
+% Dynamische Datumsausgabe
 \usepackage[german]{isodate}
 
-%Zusaetzlich Mathemtiksymbole
+% Zusaetzlich Mathemtiksymbole
 \usepackage{amsmath}
 \usepackage{mathtools}
 
-%Besser Handling von internen Countern und Berechnungen
+% Besser Handling von internen Countern und Berechnungen
 \usepackage{calc}
 
-%TODOs anbringen am Rand
+% TODOs anbringen am Rand
 \usepackage{todonotes}
 
-%Hyperlinks (Muss das letzte geladene Paket sein)
+% Hyperlinks (Muss das letzte geladene Paket sein)
 \usepackage[bookmarks=true, %Verzeichnis generieren
             bookmarksopen=true, %Verzeichnis öffnen
             bookmarksopenlevel=3, %Tiefe der Verzeichnisöffnung
