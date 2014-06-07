@@ -16,7 +16,7 @@
 % Indexerstellung: makeindex -s report.ist report.idx
 %   Umlaute müssen separat behandelt werden!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[version=last,fleqn,pointlessnumbers]{scrreprt}  %first: Ergebniss Kompatibel zu ersten Version; last: Ergebniss entspricht den aktuellen Paketen; fleqn: Formeln linksbündig; pointlessnumbers: Kapitelnummerierung ohne Punkt; twoside: Doppelseitiger Druck
+\documentclass[version=last,fleqn,numbers=noenddot]{scrreprt}  %first: Ergebniss Kompatibel zu ersten Version; last: Ergebniss entspricht den aktuellen Paketen; fleqn: Formeln linksbündig; pointlessnumbers: Kapitelnummerierung ohne Punkt; twoside: Doppelseitiger Druck
 
 %Dokumentangaben
 \newcommand{\Titel}{Stellaris Robot Model}
@@ -253,7 +253,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Inhaltsverzeichnis Inhalt
 %\KOMAoptions{toc=listof}  %Abbildungs- und Tabellenverzeichnis ins Inhaltsverzeichnis
-\KOMAoptions{toc=index} %Stichwortverzeichnis ins Inhaltsverzeichnis
+%\KOMAoptions{toc=index} %Stichwortverzeichnis ins Inhaltsverzeichnis
 %
 %Tiefe der Gliederung
 \setcounter{secnumdepth}{3}
@@ -290,10 +290,10 @@
 %Kapitel: Roboterarme
 \input{content/roboterArme}
 %Kapitel 1: Howto
-\input{content/howto}
+%\input{content/howto}
 %
 %Kapitel 2: Beispiele
-\input{content/beispiele}
+%\input{content/beispiele}
 %
 %Ergebnisse
 %\input{content/ergebnis}
@@ -330,8 +330,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Stichwortverzeichnis
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\indexname}{Stichwortverzeichnis} 
-\printindex
+%\renewcommand{\indexname}{Stichwortverzeichnis} 
+%\printindex
 %
 %
 %
