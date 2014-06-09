@@ -13,3 +13,10 @@
 % 0.0.0       Erstellung der Datei
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
 \chapter{Ergebnis}\label{ch:ergebnis}
+Unser Ziel war es, einen möglichst schnellen Kreislauf der ECTS zu ermöglichen. Das sollte mittels verschiedener Optimierungen\footnote{Optimierungen gegenüber der Beispiellösung; der Quellcode dieser anderen Lösung stand nicht zur Verfügung.} erreicht werden. Vorgesehen war zu diesem Zweck das beschleunigen der Roboterarme. Sie sollten möglichst flüssig handeln und Wartezeiten vermeiden.\par
+%
+Das gesteckte Ziel konnte nicht erreicht werden. Grund dafür ist die Hardware - sie ist wesentlich langsamer als angenommen. Beispielsweise führt der Roboter nur maximal etwa 2-3 Befehle pro Sekunde aus. Für eine flüssige Bewegung ist das deutlich zu wenig. Weiterhin schwingen die Arme nach jeder Bewegung nach. Da eine Rückkoppelung nicht gegeben ist, kann dieses Verhalten nicht auf vernünftige Weise kompensiert werden.\par
+%
+Während unserer Tests haben sich einige Hardwarekomponenten anders verhalten als gemäss Handbuch zu erwarten wäre\footnote{Insbesondere der Totalausfall einer der beiden Arme kam unerwartet.}. Dieser Sachverhalt wurde mit dem Dozenten besprochen.\par
+%
+Im Bezug auf das verwendete Echtzeitbetriebssystem konnte eine funktionierende Lösung entwickelt und implementiert werden. Das System läuft dank der umgesetzten Task-Synchronisation stabil\footnote{Das System wurde aus Zeitgründen nicht ausgiebig getestet. Bei den durchgeführten Tests konnte jedoch nie ein Synchronisationsproblem oder ein Deadlock beobachtet werden.}.

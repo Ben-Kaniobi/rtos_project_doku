@@ -19,8 +19,8 @@
     %    
     \image{appendix/StellarisRoboterModell}{page=11,trim=2cm 16.7cm 11cm 4.5cm,clip=true,width=0.5\textwidth}[Linker Roboterarm][abb:robot_arm_left]
     %
-    
-    
-    
-    
     \image{content/UML/activity_robot_arms}{width=1.0\textwidth}[Aktivitätsdiagramm \textit{Roboterarme}][abb:activity_robot_arms]
+    %
+    Abbildung \ref{abb:activity_robot_arms} zeigt die Funktionsweise der Arme auf. Zu beachten ist dabei, dass die Roboterarme sowohl gegenseitig, als auch zwischen sich und den Förderbändern, eine Synchronisation mittels Semaphoren vorsehen. Dabei enthalten die Semaphoren jeweils eine Information über den Zustand der Anlage. Sie schützen dadurch faktisch einen Teil des Raumes vor mehrfacher Nutzung (zum Beispiel zwei Roboterarme am gleichen Ort).\par
+    %
+    Um die \textit{Gesten} der Roboter möglichst einfach einstellen zu können, wurde ein einfaches kinematisches Modell der Roboter erstellt. Auf diese Weise kann eine vorgegebene \textit{Hand}-Stellung in die zugehörigen Gelenk-Winkel überführt werden. Aufgrund der Anzahl sowie Anordnung der Gelenke kommt dieses inverse Kinematik-Modell mit analytischen Berechnungen aus - es sind keine (numerischen) Näherungslösungen nötig.
